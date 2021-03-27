@@ -7,12 +7,17 @@ import {
     UpperText
 } from './styles';
 
-const Header:React.FC = () => {
+interface IBadgeProps{
+    name: string,
+    position: string
+};
+
+const Header:React.FC<IBadgeProps> = ({name,position}) => {
     return(
         <Container>
-            <UpperText></UpperText>
+            <UpperText>{name}</UpperText>
             <Divider/>
-            <LowerText></LowerText>
+            <LowerText>{position}</LowerText>
         </Container>
     )
 };

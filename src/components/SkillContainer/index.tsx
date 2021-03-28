@@ -8,17 +8,19 @@ import {
 
 interface IChildProps{
     children?: React.ReactNode,
+    description: string,
     data: {
         type?: string,
         skill: string
     }[]
 };
 
-const SkillContainer:React.FC<IChildProps> = ({ children,data }) => {
+const SkillContainer:React.FC<IChildProps> = ({ children,data,description }) => {
     return(
         <Container>
             <ContainerHeader>
                 { children }
+                <h1>{description}</h1>
             </ContainerHeader>
                 {
                     !!data && data.length > 0 ?

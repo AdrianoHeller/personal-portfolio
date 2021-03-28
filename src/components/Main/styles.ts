@@ -5,9 +5,9 @@ export const MainContainer = styled.div`
     grid-template-columns: 200px auto;
     grid-template-rows: 100px 200px 200px auto;
     grid-template-areas:
-    'header box'
-    'subh box'
-    'subh box'
-    'xp xp';
+    'lbox rbox'
+    'lbox rbox'
+    'subh subh'
+    'subh subh';
 `;
 

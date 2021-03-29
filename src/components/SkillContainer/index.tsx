@@ -22,6 +22,7 @@ const SkillContainer:React.FC<IChildProps> = ({ children,data,description }) => 
                 { children }
                 <h1>{description}</h1>
             </ContainerHeader>
+            <ContainerBody>    
                 {
                     !!data && data.length > 0 ?
                         data.map((item,index) => {
@@ -38,6 +39,7 @@ const SkillContainer:React.FC<IChildProps> = ({ children,data,description }) => 
                         }) :
                         <p>Loading Data...</p>
                 }
+            </ContainerBody>
         </Container>
     )
 };

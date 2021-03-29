@@ -1,6 +1,19 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+interface IDataProps{
+    data:{
+        address: string,
+        complement: string,
+        cityState: string,
+        zipCode: string,
+        github: string,
+        linkedin: string,
+        email: string,
+        phone: string
+     }
+};
+
+export const Container = styled.div<IDataProps>`
     display: flex;
     flex-direction: column;
     align-items: center;

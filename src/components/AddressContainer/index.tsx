@@ -17,7 +17,7 @@ interface IDynamicDataProps{
 
 const AddressContainer: React.FC<IDynamicDataProps> = ({ data }) => {
     return(
-        <Container>
+        <Container data={data}>
             <UpperData>
                 {
                     !!data &&
